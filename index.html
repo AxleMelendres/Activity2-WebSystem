@@ -1,11 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Piece Arcs</title>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <title>One Piece Arcs</title>
+  <style>
+
+    header {
+    background: #111122;  /* dark background */
+    color: #FFD700;       /* gold text */
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #FFD700;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+
+    header .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+
+    header img {
+    height: 40px; /* logo size */
+    width: auto;
+    }
+
+    header h1 {
+    font-family: 'Pirata One', cursive; /* pirate-style font */
+    font-size: 2rem;
+    margin: 0;
+    color: #FFD700; /* gold */
+    text-shadow: 2px 2px 5px black, 0 0 10px #fff; /* glow + shadow */
+    letter-spacing: 2px;
+    }
+
+
+    nav a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+    }
+
+    nav a:hover {
+    color: white;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e2e;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #FFD700; /* gold */
+    }
+
+    table {
+      margin: auto;
+      border-spacing: 10px;
+    }
+
+    td {
+    background: #2a2a40;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer; /* makes it look clickable */
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    td:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(17, 0, 77, 0.6); /* gold glow */
+    }
     
+    /* Equal size for all images */
+    td img {
+      width: 220px;
+      height: 300px;
+      object-fit: cover; /* keeps ratio while filling box */
+      border-radius: 8px;
+      display: block;
+    }
+
+    /* Bigger image for saga posters */
+    .large img {
+      width: 450px;  /* spans 2 cells wide */
+      height: 610px; /* spans 2 cells tall */
+    }
+
+    .title {
+      margin-top: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #f0f0f0;
+    }
+
+  footer {
+  margin-top: 40px;
+  background: #111122;  /* darker shade than body */
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 2px solid #FFD700; /* gold accent line */
+  }
+
+  footer a {
+  color: #FFD700; /* gold links */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+  }
+
+  footer a:hover {
+  color: white; /* turns white on hover */
+  }
+
+  </style>
+    </head>
+  <body>
+        <header>
+        <div class="logo-title">
+            <img src="images/wampislogo.png" alt="One Piece Logo">
+            <h1>Journey to the Grand Line</h1>
+        </div>
+        </header>
+
+  <table>
+    <tr>
+      <td>
+        <a href="https://onepiece.fandom.com/wiki/Romance_Dawn_Arc" target="_blank">
+         <img src="images/romancedawn.jpg" alt="Romance Dawn">
+        <p class="title">Romance Dawn</p>
+    </a>
+    </td>
+
+      <td>
+        <a href="https://onepiece.fandom.com/wiki/Orange_Town_Arc" target="_blank">
+        <img src="images/orangetown.jpg" alt="Orange Town Arc"><p class="title">Orange Town Arc</p></td>
+        </a>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/eastblue.jpg" alt="East Blue Saga">
+        <p class="title">EAST BLUE SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://onepiece.fandom.com/wiki/Syrup_Village_Arc" target="_blank">
+        <img src="images/syrupvillage.jpg" alt="Syrup Village Arc"><p class="title">Syrup Village Arc</p></td>
+      <td><img src="images/baratie.jpg" alt="Baratie Arc"><p class="title">Baratie Arc</p></td>
+        </a>
+    </tr>
+    <tr>
+      <td><img src="images/arlongpark.jpg" alt="Arlong Park Arc"><p class="title">Arlong Park Arc</p></td>
+      <td><img src="images/loguetown.jpg" alt="Loguetown Arc"><p class="title">Loguetown Arc</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/reversemountain.jpg" alt="Reverse Mountain Arc"><p class="title">Reverse Mountain Arc</p></td>
+      <td><img src="images/whiskypeak.jpg" alt="Whisky Peak Arc"><p class="title">Whisky Peak Arc</p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/arabastaarc.jpg" alt="Arabasta Saga">
+        <p class="title">ARABASTA SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/ltelgarden.jpg" alt="Little Garden"><p class="title">Little Garden Arc</p></td>
+      <td><img src="images/chapa.jpg" alt="Drum Island"><p class="title">Drum Island Arc</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/ltelgarden.jpg" alt="Little Garden"><p class="title">Little Garden Arc</p></td>
+      <td><img src="images/chapa.jpg" alt="Drum Island"><p class="title">Drum Island Arc</p></td>
+      <td><img src="images/arabastaa.jpg" alt="Arabasta"><p class="title">Arabasta Arc</p></td>
+      <td><img src="images/deathmerry.jpg" alt="Arabasta"><p class="title">Post-Arabasta Arc</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/jayaarc.jpg" alt="Arabasta"><p class="title">Jaya Arc</p></td>
+      <td><img src="images/chapaman.jpg" alt="Arabasta"><p class="title">Chopper Man: Special Episode</p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/skyislandsaga.jpg" alt="East Blue Saga">
+        <p class="title">SKY ISLAND SAGA</p>
+      </td>
+    </tr>
+    <tr>
+         <td><img src="images/skypieaarc.jpg" alt="Arabasta"><p class="title">Skypiea Arc</p></td>
+      <td><img src="images/g8 arc.jpg" alt="Arabasta"><p class="title">G-8 Arc</p></td>
+    </tr>
+     <tr>
+      <td><img src="images/longringisland.jpg" alt="Arabasta"><p class="title">Long Ring Long Island Arc</p></td>
+      <td><img src="images/watersevenarc.jpg" alt="Arabasta"><p class="title">Water Seven Arc</p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/watersevensaga.jpg" alt="East Blue Saga">
+        <p class="title">WATER SEVEN SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/enies lobby arc.jpg" alt="Arabasta"><p class="title">Enies Lobby Arc</p></td>
+      <td><img src="images/postenieslobby.jpg" alt="Arabasta"><p class="title">Post-Enies Lobby Arc</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/Ice_Hunter_Arc.webp" alt="Arabasta"><p class="title">Ice Hunter Arc</p></td>
+      <td><img src="images/thrillerbarksaga.jpg" alt="Arabasta"><p class="title">Thriller Bark Arc</p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/thrillerbarkarc.jpg" alt="East Blue Saga">
+        <p class="title">THRILLER BARK SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/Spa_Island_Arc.webp" alt="Arabasta"><p class="title">Spa Island Arc</p></td>
+      <td><img src="images/oceandream.jpg" alt="Arabasta"><p class="title">Ocean Dream Arc</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/sabao.jpg" alt="Arabasta"><p class="title">Sabaody Archipelago Arc</p></td>
+      <td><img src="images/amazonlilyarc.jpg" alt="Arabasta"><p class="title">Amazon Lily Arc </p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/summitwarsaga.jpg" alt="East Blue Saga">
+        <p class="title">SUMMIT WAR SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/impoldown.jpg" alt="Arabasta"><p class="title">Impel Down Arc</p></td>
+      <td><img src="images/MARINEFORDD.jpg" alt="Arabasta"><p class="title">Marineford War Arc</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/postwarc.webp" alt="Arabasta"><p class="title">Post-War Arc</p></td>
+      <td><img src="images/Toriko_x_One_Piece.webp" alt="Arabasta"><p class="title">Toriko Crossover </p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/fishmanislandarc.jpg" alt="East Blue Saga">
+        <p class="title">FISH-MAN ISLAND SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/returntosabao.jpg" alt="Arabasta"><p class="title">Return to Sabaody Arc</p></td>
+      <td><img src="images/fishmanislandsaga.jpg" alt="Arabasta"><p class="title">Fish-Man Island Arc</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/postwarc.webp" alt="Arabasta"><p class="title">Post-War Arc</p></td>
+      <td><img src="images/Toriko_x_One_Piece.webp" alt="Arabasta"><p class="title">Toriko Crossover </p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/dresssaga.jpg" alt="East Blue Saga">
+        <p class="title">DRESSROSA SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/punkhazardarc.jpg" alt="Arabasta"><p class="title">Punk Hazard Arc</p></td>
+      <td><img src="images/dressrosaarc.jpg" alt="Arabasta"><p class="title">Dressrosa Arc</p></td>
+    </tr>
+    <td><img src="images/zarc.webp" alt="Arabasta"><p class="title">Z's Ambition Arc</p></td>
+      <td><img src="images/zouarc.jpg" alt="Arabasta"><p class="title">Zou Arc </p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/wholecakeislandsaga.jpg" alt="East Blue Saga">
+        <p class="title">WHOLE CAKE ISLAND SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/wholecakeislandarc.jpg" alt="Arabasta"><p class="title">Whole Cake Island Arc</p></td>
+      <td><img src="images/marinerokiearc.webp" alt="Arabasta"><p class="title">Marine Rookie Arc</p></td>
+    </tr>
+    <td><img src="images/levelyarc.jpg" alt="Arabasta"><p class="title">Levely Arc</p></td>
+      <td><img src="images/uta.jpg" alt="Arabasta"><p class="title">Uta's Past Arc </p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/wanocountrysaga.jpg" alt="East Blue Saga">
+        <p class="title">WANO COUNTRY SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/wanos.jpg" alt="Arabasta"><p class="title">Wano Country Arc</p></td>
+      <td><img src="images/Cidre_Guild_Infobox.webp" alt="Arabasta"><p class="title">Cidre Guild Arc</p></td>
+    </tr>
+    <td><img src="images/ighed.jpg" alt="Arabasta"><p class="title">Egghead Arc</p></td>
+      <td><img src="images/elbapharc.jpg" alt="Arabasta"><p class="title">Elbaph Arc </p></td>
+      <td class="large" rowspan="2" colspan="2">
+        <img src="images/final saga arc.jpg" alt="East Blue Saga">
+        <p class="title">FINAL SAGA</p>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/tbc.jpg" alt="Arabasta"><p class="title">TO BE CONTINUED</p></td>
+      <td><img src="images/tbc.jpg" alt="Arabasta"><p class="title">TO BE CONTINUED</p></td>
+    </tr>
+    
+    
+  </table>
+
+    <footer>
+    <p>&copy; 2025 One Piece Fan Page | Axle Melendres - Activity 2 hehe</p>
+    <p>
+        <a href="#top">Back to Top</a> | 
+        <a href="https://onepiece.fandom.com/wiki/One_Piece_Wiki" target="_blank">One Piece Wiki</a> | 
+        <a href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece" target="_blank">Watch One Piece</a>
+    </p>
+    </footer>
+
 </body>
 </html>
